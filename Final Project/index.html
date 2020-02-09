@@ -1,0 +1,102 @@
+<html>
+
+<head>
+    <meta charset="utf8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        canvas {
+            display: block;
+            margin: 0 auto;
+        }
+
+        div {
+            display: inline-block;
+        }
+
+        h1 {
+            padding: 20px;
+            text-align: center;
+        }
+
+        body {
+            font-family: 'Noto Sans', sans-serif !important;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <h1>Ծրագրավորում III Երևան</h1>
+            </tr>
+            <tr>
+                <h1>Անուն Ազգանուն</h1>
+            </tr>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Գույն</th>
+                <th scope="col">Նկարագրություն</th>
+                <th scope="col">Ծնվել է</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td scope="row" style="background-color:green;"></td>
+                <td>Կանաչը խոտն է, որը բազմանում է 2 ցիկլը մեկ,մահանում է երբ նրան ուտում է խոտակերը</td>
+                <td id="grassCount"></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td scope="row" style="background-color:orange;"></td>
+                <td>Դեղինը խոտակերն է, որը բազմանում է 3 հատ խոտ ուտելուց հետո և մահանում է 10 հատ չուտելուց հետո, կամ
+                    երբ նրան ուտում է գիշատիչը կամ ասպետը։</td>
+                <td id="grassEaterCount"></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td scope="row" style="background-color:red;"></td>
+                <td>Կարմիրը գիշատիչն է, որը բազմանում է 2 հատ խոտակեր ուտելուց հետո և մահանում է 20 հատ չուտելուց հետո, կամ
+                    երբ նրան ուտում է կախարդը</td>
+                <td id="predatorCount"></td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td scope="row" style="background-color:black;"></td>
+                <td>Սևը կախադն է, որը չի բազմանում, ստեղծում է խոտակերներ, և մահանում է 20 հատ չուտելուց հետո, կամ
+                    երբ նրան ուտում է բարի աստվածը:</td>
+                <td id="witcherCount"></td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td scope="row" style="background-color:white;"></td>
+                <td>Սպիտակը ասպետն է, որը բազմանում է 1 հատ խոտ ուտելուց հետո և մահանում է 20 հատ չուտելուց հետո, կամ
+                    երբ նրան ուտում է կախարդը կամ չար աստվածը:</td>
+                <td id="knightCount"></td>
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <td scope="row" style="background-color:blue;"></td>
+                <td>Կապույտը բարի աստվածն է, որը չի բազմանում և չի մահանում, ստեղծում է ասպետներ:</td>
+                <td id="god1Count"></td>
+            </tr>
+            <tr>
+                <th scope="row">7</th>
+                <td scope="row" style="background-color:purple;"></td>
+                <td>Մանուշակագույնը չար աստվածն է, որը չի բազմանում և չի մահանում, ստեղծում է կախարդներ:</td>
+                <td id="god2Count"></td>
+            </tr>
+            <tr>
+                <td id="weather"></td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="p5.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
